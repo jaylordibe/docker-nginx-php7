@@ -12,15 +12,17 @@ apt-get update
 echo "==================== INSTALLING COMMON SOFTWARE ===================="
 export DEBIAN_FRONTEND=noninteractive
 apt-get install -y \
-    wget \
-    curl \
-    zip \
-    unzip \
     build-essential \
     lsb-release \
     ca-certificates \
     apt-transport-https \
-    software-properties-common
+    software-properties-common \
+    wget \
+    curl \
+    zip \
+    unzip \
+    nano \
+    cron
 
 # Install nginx
 echo "==================== INSTALLING NGINX ===================="
